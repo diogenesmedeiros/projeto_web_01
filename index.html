@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div id="modalLinkedIn" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modalLinkedIn">&times;</span>
+            <div class="modal-body">
+                <h2>LinkedIn</h2>
+                <hr>
+                <a href="https://www.linkedin.com/in/diogenesmedeirosy" target="_blank"><i class="fab fa-linkedin"></i> Diógenes Júnior</a>
+                <a href="https://www.linkedin.com/in/matheus-amanciodeoliveira-7b22ab195" target="_blank"><i class="fab fa-linkedin"></i> Matheus Amâncio</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> José Victor</a>
+            </div>
+        </div>
+    </div>
+    <div id="modalGitHub" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modalGitHub">&times;</span>
+            <div class="modal-body">
+                <h2>GitHub</h2>
+                <hr>
+                <a href="https://github.com/diogenesmedeiros" target="_blank"><i class="fab fa-github"></i> Diógenes Júnior</a>
+                <a href="https://github.com/matheusamancio2020" target="_blank"><i class="fab fa-github"></i> Matheus Amâncio</a>
+                <a href="https://github.com/JoseVictorFaustino" target="_blank"><i class="fab fa-github"></i> José Victor</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <h1>Portfólio de Diógenes, José Victor, Matheus Amancio</h1>
@@ -19,17 +46,48 @@
             </div>
             <div class="hero">
                 Olá, somos <span>Diógenes</span>, <span>José Victor</span> e <span>Matheus Amâncio</span>, estudantes de Desenvolvimento web. Explore nossos projetos e habilidades na área de programação e design.
-                <button>Ver perfil</button>
+                <a href="/profile.html">Ver perfil</a>
             </div>
             
         </div>
-        <hr> 
+        <hr>
         <div class="skills">
-
+            <h2>Nossas habilidades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Habilidades</th>
+                        <th>Nível</th>
+                        <th>Experiência</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Avançado</td>
+                        <td>5+</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Avançado</td>
+                        <td>5+</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Avançado</td>
+                        <td>5+</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="footer">
-            Visite nossas redes sociais:
-        </div>
+            <p>Visite nossas redes sociais:</p>
+            <div class="social-icons">
+                <i id="openModalLinkedIn" class="fab fa-linkedin"></i>
+                <i id="openModalGitHub" class="fab fa-github"></i>
+            </div>
+        </div>        
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

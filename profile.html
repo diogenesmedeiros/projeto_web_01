@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
+    <div id="modalLinkedIn" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modalLinkedIn">&times;</span>
+            <div class="modal-body">
+                <h2>LinkedIn</h2>
+                <hr>
+                <a href="https://www.linkedin.com/in/diogenesmedeirosy" target="_blank"><i class="fab fa-linkedin"></i> Diógenes Júnior</a>
+                <a href="https://www.linkedin.com/in/matheus-amanciodeoliveira-7b22ab195" target="_blank"><i class="fab fa-linkedin"></i> Matheus Amâncio</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> José Victor</a>
+            </div>
+        </div>
+    </div>
+    <div id="modalGitHub" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modalGitHub">&times;</span>
+            <div class="modal-body">
+                <h2>GitHub</h2>
+                <hr>
+                <a href="https://github.com/diogenesmedeiros" target="_blank"><i class="fab fa-github"></i> Diógenes Júnior</a>
+                <a href="https://github.com/matheusamancio2020" target="_blank"><i class="fab fa-github"></i> Matheus Amâncio</a>
+                <a href="https://github.com/JoseVictorFaustino" target="_blank"><i class="fab fa-github"></i> José Victor</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Portfólio de Diógenes, José Victor, Matheus Amancio</h1>
+        </div>
+        <div class="about">
+            <p>
+                <span>Diógenes:</span> Sou desenvolvedor web com foco em backend, tendo experiência em Java e Spring Boot, 
+                além de TypeScript e JavaScript com Node.js. Atualmente, estou estudando PHP e Laravel, 
+                assim como C#, na qual tenho experiência no desenvolvimento de jogos e estou estudando quanto 
+                para aplicações .NET. No frontend, estou aprimorando meus conhecimentos em React e Svelte. Também 
+                possuo experiência com desenvolvimento mobile utilizando Flutter, e estou familiarizado com bancos 
+                de dados como MySQL e PostgreSQL.
+            </p>
+        </div>
+        <hr>
+        <div class="contact">
+            <h2>Entre em contato conosco</h2>
+            <p>Email: <a href="mailto:diogenes.medeiros.j@gmail.com">juniormedeiros20119@gmail.com</a></p>
+        </div>
+        <div class="footer">
+            <div class="social-icons">
+                <i id="openModalLinkedIn" class="fab fa-linkedin"></i>
+                <i id="openModalGitHub" class="fab fa-github"></i>
+            </div>
+        </div>   
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
